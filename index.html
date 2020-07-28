@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Y CSS3</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="js/modernizr.js"></script>
+    <script src="js/prefixfree.js"></script>
+    <script src="js/scrollomatic.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("a.scroll").scrollomatic();
+        });
+    </script>
+</head>
+<body>
+    <!--Header-->
+    <header> 
+        <!--Link logo-->
+        <a href="#home" class="scroll"> </a>
+            <div id="logo"></div>
+
+            <!--Header > Nav-->
+            <nav>
+                <ul>
+                    <li><a href="#home" class="scroll">HOME</a></li>
+                    <li><a href="#temas" class="scroll">TEMAS</a></li>
+                    <li><a href="#galeria" class="scroll">GALERIA</a></li>
+                    <li><a href="#contactos" class="scroll">CONTACTENOS</a></li>
+                </ul>
+            </nav>
+       
+    </header>
+    <!--Main-->
+    <main id="contenido"> 
+        <!--Video-->
+        <video  autoplay loop preload="auto"> 
+            <!--Sources-->
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.ogv" type="video/ogv">
+            <source src="video/video.webm" type="video/webm">
+            
+            <p>Su navegador no soporta el video</p>
+        </video>
+        <!--Section HOME-->
+        <section id="home">
+            <!--Cuerpo de la seccion header-->
+                <div id="globo"></div>
+                <h2><span> HTML5 Y CSS3 </span>PROYECTO</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, corporis odit! 
+                    Atque quam sequi dolorum. Tempore, sed sint corporis voluptas minus nesciunt optio reiciendis 
+                    laborum perspiciatis eum, molestias in cum accusamus, temporibus nisi officia reprehenderit?
+                </p>
+                <a href="#temas">Conozca más</a>
+                <div id="abajo"></div>        
+        </section>
+        <!--Section TEMAS-->
+        <section id="temas">
+            <!--Cuerpo de la seccion temas-->
+            <h3>Temas</h3>
+            <article>
+                <div id="imagen1"></div>
+                <h4>Subtitulo nivel 4</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, vero?</p>
+                <a href="#">Leer más</a>
+                <div id="imagen2"></div>
+                <h4>Subtitulo nivel 4</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, vero?</p>
+                <a href="#">Leer más</a>
+                <div id="imagen3"></div>
+                <h4>Subtitulo nivel 4</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, vero?</p>
+                <a href="#">Leer más</a>
+            </article>
+        </section>
+        <!--Seccion Galeria-->
+        <section id="galeria">
+            <!--Cuerpo de la seccion Galeria-->
+            <h3>GALERIA</h3>
+            <div id="fotos">
+                <a href="#" title="Imagen1"><img src="img/1.jpg" alt="Imagen1"></a>
+                <a href="#" title="Imagen2"><img src="img/2.jpg" alt="Imagen2"></a>
+                <a href="#" title="Imagen3"><img src="img/3.jpg" alt="Imagen3"></a>
+                <a href="#" title="Imagen4"><img src="img/4.jpg" alt="Imagen4"></a>
+                <a href="#" title="Imagen5"><img src="img/5.jpg" alt="Imagen5"></a>
+                <a href="#" title="Imagen6"><img src="img/6.jpg" alt="Imagen6"></a>
+                <a href="#" title="Imagen7"><img src="img/7.jpg" alt="Imagen7"></a>
+                <a href="#" title="Imagen8"><img src="img/8.jpg" alt="Imagen8"></a>
+                <a href="#" title="Imagen9"><img src="img/9.jpg" alt="Imagen9"></a>
+            </div>
+        </section>
+        <!--Seccion contactos-->
+        <section id="contactos">
+                <!--Cuerpo de la seccion contactos-->
+                <h3>Contactenos</h3>
+                <div id="formulario">
+                    <form  method="post">
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="tel" name="telefono" placeholder="Telefono" required 
+                        pattern="[0-9]{3}/s[0-9]{3}/s[0-9]{4}$" title="Debe de ser un numero telefonico">
+                        <textarea  cols="30" rows="10"></textarea>
+                        <input id="boton" style="color: white;" type="submit" value="Enviar datos"  >
+                        
+                    </form>
+                    </div>
+                <div id="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15417.384940321863!2d-89.54032675!3d14.973473300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sgt!4v1587049200845!5m2!1ses-419!2sgt" width="400" height="300" ></iframe>
+                </div>
+                <a href="#contenido" class="arriba scroll"></a>
+        </section>
+        <!--Footer-->
+        <footer>
+            <p>Copyright &amp; 2020 Diego Catalán - Todos los derechos reservados</p>
+        </footer>
+    </main>
+
+</body>
+</html>
